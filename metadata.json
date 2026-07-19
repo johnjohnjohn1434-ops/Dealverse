@@ -1,0 +1,6 @@
+{
+  "name": "DealVerse",
+  "description": "A premium, modern ecommerce deals platform with an integrated AI shopping assistant, real-time price comparisons, price history, coupons, and administrative controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

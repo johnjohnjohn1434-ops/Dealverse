@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --animate-gradient-shift: gradient-shift 10s ease infinite;
+  --animate-pulse-slow: pulse-slow 18s ease-in-out infinite;
+  --animate-border-glow: border-glow 3s linear infinite;
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  @keyframes pulse-slow {
+    0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.25; }
+    33% { transform: scale(1.1) translate(40px, -40px); opacity: 0.45; }
+    66% { transform: scale(0.9) translate(-30px, 30px); opacity: 0.35; }
+  }
+  @keyframes border-glow {
+    0%, 100% { border-color: rgba(59, 130, 246, 0.2); box-shadow: 0 0 10px rgba(59, 130, 246, 0.1); }
+    33% { border-color: rgba(168, 85, 247, 0.2); box-shadow: 0 0 15px rgba(168, 85, 247, 0.15); }
+    66% { border-color: rgba(236, 72, 153, 0.2); box-shadow: 0 0 10px rgba(236, 72, 153, 0.1); }
+  }
+}
+
+/* Glassmorphism custom utilities */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-card-dark {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
